@@ -1,4 +1,4 @@
-// priveli
+// pirveli
 
 // const fs = require("fs/promises")
 
