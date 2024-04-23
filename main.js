@@ -33,35 +33,14 @@
 
 // mesame
 
-// const fs = require("fs/promises")
-
-// const users = [
-//     {
-//         name: "Gela",
-//         age: 22,
-//     },
-//     {
-//         name: "Nika",
-//         age: 2,
-//     },
-//     {
-//         name: "Gocha",
-//         age: 32,
-//     },
-//     {
-//         name: "Daviti",
-//         age: 17,
-//     },
-// ]
-
-
-// const filtered = users.filter(el => el.age >= 18)
-// const rame = JSON.stringify(filtered)
-// console.log(rame)
+// const fs = require("fs/promises");
 
 // async function main(){
 //     try{
-//         await fs.writeFile("data.json", `${rame}`)
+//         const users = await fs.readFile('data.json', 'utf8');
+//         const parsed = JSON.parse(users)
+//         const done = JSON.stringify(parsed.filter(el => el.age > 18))
+//         await fs.writeFile('data.json', `${done}`)
 //     }catch(er){
 //         console.log(er, "er")
 //     }
